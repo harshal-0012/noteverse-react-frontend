@@ -3,7 +3,7 @@ import deviceImage from './images/device1.png';
 import img2 from './images/img2.png';
 import book2 from './images/book2.png';
 import ServiceCard from './ServiceCard';
-import './ContentSection.css';
+// import './ContentSection.css';
 
 const Services = () => (
   <section className="card-3" id="service">

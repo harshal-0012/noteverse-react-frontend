@@ -1,19 +1,19 @@
 import React from 'react';
 import penImage from './images/pen.png';
 import gifImage from './images/Untitled design(1).gif';
-import './Header.css';
+import headstyles from './Header.module.css'; // Importing header styles using headstyles
 
 const Header = () => (
-  <header id="header">
-    <div className="header-content" id="header-content">
-      <h1 id="header-title">
-        NOTEVERSE<span><img src={penImage} alt="Pen" id="pen-img" /></span>
+  <header className={headstyles.header}>
+    <div className={headstyles['header-content']} id="header-content">
+      <h1 className={headstyles['header-title']} id="header-title">
+        NOTEVERSE<span><img src={penImage} alt="Pen" className={headstyles['pen-img']} /></span>
       </h1>
-      <h3 id="header-subtitle">Read With Ease</h3>
-      <button id="learn-more-btn">Learn More</button>
+      <h3 className={headstyles['header-subtitle']} id="header-subtitle">Read With Ease</h3>
+      <button className={headstyles['learn-more-btn']} id="learn-more-btn">Learn More</button>
     </div>
-    <div className="header-name" id="header-name">
-      <img src={gifImage} alt="Header GIF" id="header-gif" />
+    <div className={headstyles['header-name']} id="header-name">
+      <img src={gifImage} alt="Header GIF" className={headstyles['header-gif']} />
     </div>
   </header>
 );
